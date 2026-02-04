@@ -62,16 +62,18 @@ export default function App() {
       </div>
 
       <ul>
-        {notes.map((note) => (
-          <li key={note.id}>
-            {note.text}
-            <div>
-              <button onClick={() => editNote(note)}>Edit</button>
-              <button onClick={() => deleteNote(note.id)}>Delete</button>
-            </div>
-          </li>
-        ))}
-      </ul>
+  {notes.map((note) => (
+    <li key={note.id} className="note-item">
+      <span className="note-text">{note.text}</span>
+
+      <div className="note-actions">
+        <button onClick={() => editNote(note)}>Edit</button>
+        <button onClick={() => deleteNote(note.id)}>Delete</button>
+      </div>
+    </li>
+  ))}
+</ul>
+
     </div>
   );
   }
