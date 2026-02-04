@@ -1,10 +1,10 @@
-body {
+/*body {
     font-family: Arial, sans-serif;
       background: #f4f6f8;
     background-color:gray;
       }
 
-     /* .app {
+      .app {
         max-width: 400px;
           margin: 30px auto;
             background: white;
@@ -12,6 +12,16 @@ body {
                 border-radius: 8px;
           
                 }*/
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+    background-color: green;
+}
+
 .app {
   width: 90%;
   max-width: 600px;
